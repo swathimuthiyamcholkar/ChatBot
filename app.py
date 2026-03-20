@@ -8,8 +8,8 @@ from google import genai
 from google.genai import types
 
 # --- Page Config ---
-st.set_page_config(page_title="Study Document Chat", layout="centered")
-st.title("📄 Chat with your Study Document")
+st.set_page_config(page_title="Chat With your Document!!", layout="centered")
+st.title("📄 Chat with your Document")
 st.markdown("Upload a PDF or text file to start a grounded conversation.")
 
 # --- Sidebar for Config ---
