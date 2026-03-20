@@ -15,8 +15,11 @@ st.markdown("Chat with **Documents**, analyze **Images**, and save your work.")
 # --- Sidebar ---
 with st.sidebar:
     st.header("1. Setup")
-    api_key = st.text_input("Gemini API Key", type="password")
+    #api_key = st.text_input("Gemini API Key", type="password")
     
+    # This looks for a secret named 'GEMINI_API_KEY' in the cloud settings
+    api_key = st.secrets["GEMINI_API_KEY"]
+    #GEMINI_API_KEY = "your-api-key-here"
     st.header("2. Knowledge Base")
     uploaded_doc = st.file_uploader("Upload Document (PDF/TXT)", type=['pdf', 'txt'])
     uploaded_img = st.file_uploader("Upload Image for Analysis", type=['png', 'jpg', 'jpeg'])
