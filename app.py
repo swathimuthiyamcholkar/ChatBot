@@ -16,8 +16,8 @@ st.markdown("Upload a PDF or text file to start a grounded conversation.")
 with st.sidebar:
     st.header("Setup")
     # This looks for a secret named 'GEMINI_API_KEY' in the cloud settings
-    api_key = "AIzaSyDmEmGjVgYDZ4Y_o6ewABtQgc9UQRd-wE0"
-    #api_key = st.text_input("Enter Gemini API Key", type="password")
+    #api_key = "AIzaSyDmEmGjVgYDZ4Y_o6ewABtQgc9UQRd-wE0"
+    api_key = st.text_input("Enter Gemini API Key", type="password")
     uploaded_file = st.file_uploader("Upload your document", type=['pdf', 'docx', 'txt'])
     
     if st.button("Clear Chat"):
